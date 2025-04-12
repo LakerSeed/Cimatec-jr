@@ -1,0 +1,327 @@
+*{ 
+    margin: 0; padding: 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+body{
+    background-color: #0f0420cc;
+}
+.logo{
+    width: 15%;
+    padding-left: 10px;
+}
+.logo img{
+    background-color: #231f29;
+    border-radius: 10px;
+    height: 80%;
+}
+.navbar nav{
+    position: sticky;
+    top: 0;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+.navbar ul{
+    width: 60%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    width: 100%;
+    height: 50%;
+}
+.navbar a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+	transition: text-decoration 0.4s;
+}
+.navbar a:hover{
+	text-decoration: underline solid #e69720 5px;
+}
+.botoes{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+}
+.botoes button{
+    color: white;
+    border: 2px solid #e69720;
+    border-radius: 10px;
+    height: 30px;
+    width: 50%;
+    margin-right: 10px;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.botoes button:hover{
+    background-color: #e69720;
+    border: none;
+    transform: scale(1.1);
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_banner> img{
+    height: 500px;
+    border-radius: 20px;
+}
+.texto_banner, .img_banner{   
+    background-color: #040007;
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+}
+.texto_banner > p, h2{
+    color: #ffffff;
+    padding: 10px;
+    font-family: 'Manjari';
+    font-style: normal;
+    font-weight: 400;
+}
+.texto_banner > h2{
+    padding-top: 40px;
+    font-size: 50px;
+}
+.texto_banner > p{
+    font-size: 20px;
+}
+.slider{
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider img{
+    height: 80%;
+}
+#slider2, #slider3, #slider4{
+    display: none;
+}
+#voltar, #avançar{
+    top: 40%;
+    position: absolute;
+    height: 20%;
+    width: 50px;
+    border: none;
+    transition: opacity 0.5s;
+    opacity: 30%;
+}
+#voltar:hover, #avançar:hover{
+    opacity: 100%;
+}
+#voltar{
+    left: 0;
+}
+#avançar{
+    right: 0;
+}
+.propaganda{
+    padding: 20px 0px;
+    background-color: #30253fcc;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.propaganda img{
+    box-shadow: 5px 5px 10px 0px #646464;
+    border-radius: 40px;
+}
+.seletores{
+    display: flex;
+    padding-left: 50px;
+    background-color: #30253fcc;
+}
+.seletores > button{
+    height: 50px;
+    width: 80px;
+    background-color: #8f58e2cc;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.vendas{
+    display: flex;
+    background-color: #0f0420cc;
+    justify-content: center;
+}
+.produto{
+    display: inline-block;
+    border-radius: 20px;
+    height: 500px;
+    padding: 10px;
+}
+.vendas_img > img{
+    height: 80%;
+    border-radius: 30px;
+}
+.vendas_descrição{
+    height: 20%;
+}
+.vendas_descrição > h3,span{
+    color: #ffffff;
+}
+.real{
+    content: \0024;
+}
+#vestuário{
+    background-color: #0f0420cc;
+}
+#garrafas_produtos, #canecas_produtos, #posters_produtos, #acessórios_produtos{
+    display: none;
+}
+footer{
+    background-color: #291922;
+    height: 200px;
+    padding-top: 20px;
+}
+footer > section{
+    padding-left: 20px;
+}
+footer > section h4{
+    color: #e69720;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+footer > section p{
+    color: #ffffff;
+}
+#linkedin > img{
+    height: 30px;
+}
+.modal_style{
+    position: fixed;
+    display: flex;
+    top: 15%;
+    left: 25%;
+    background-color: #ffffff;
+    border: 3px solid #e69720;
+    width: 50%;
+    height: 70%;
+}
+.modal_cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal_img{
+    border-right: 1px solid #e69720;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagem1, #imagem2, #imagem3, #imagem4, #imagem5{
+    display: none;
+}
+#imagem_padrão{
+    border: 1px solid #646464;
+    border-radius: 50px;
+    width: 90%;
+    height: 90%;
+}
+.modal_cont > .modal_img, .modal_texto{
+    width: 50%;
+    height: 100%;
+}
+#título{
+    font-family: 'Manjari';
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.modal_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e69720;
+    padding-right: 10px;
+}
+.modal_header i{
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+.modal_header i:hover{
+    background-color: #ca8114;
+}
+#quantidade{
+    font-family: 'Manjari';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    padding-top: 80px;
+    padding-left: 10px;
+}
+.preço{
+    padding-left: 10px;
+    font-family: 'Manjari';
+    font-style: normal;
+    font-weight: 400;
+}
+#comprar{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #e69720;
+    border-radius: 10px;
+    width: 140px;
+    height: 60px;
+    transition: background-color 0.5s;
+}
+#comprar:hover{
+    color: #ffffff;
+    background-color: #e69720;
+}
+#mais, #menos{
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid #e69720;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    transition: background-color 0.5s;
+}
+#mais:hover, #menos:hover{
+    color: #ffffff;
+    background-color: #e69720;
+}
+.comprar{
+    display: block;
+    width: 120px;
+    margin-top: 10px;
+    border: 2px solid #e69720;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+}
+#modal{
+    display: none;
+}
