@@ -29,6 +29,9 @@ body{
     height: 60px;
     width: 100%;
 }
+#menu{
+    display: none;
+}
 .navbar ul{
     width: 60%;
     height: 100%;
@@ -156,6 +159,7 @@ body{
 .seletores > button{
     height: 50px;
     width: 80px;
+    color:#bde9b9;
     background-color: #8f58e2cc;
     border: none;
     margin-left: 10px;
@@ -324,4 +328,111 @@ footer > section p{
 }
 #modal{
     display: none;
+}
+@media screen and (max-width: 768px){
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 20rem;
+    }
+    #links_container{
+        display: none;
+    }
+    #menu{
+        display: block;
+        margin-left: 10px;
+    }
+    .botoes button{
+        width: 10rem;
+    }
+    .texto_banner{
+        width: 50%;
+    }
+    .texto_banner h2{
+        font-size: 30px;
+    }
+    .texto_banner p{
+        font-size: 20px;
+    }
+    .img_banner{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .img_banner img{
+        width: 100%;
+        height: 60%;
+    }
+    .slider{
+        height: 20rem;
+    }
+    .slider img{
+        width: 100%;
+        height: 80%;
+    }
+    #voltar, #avançar{
+        height: 80%;
+        width: 2rem;
+        top: 10%;
+    }
+    .propaganda{
+        display: flex;
+        align-items: center;
+    }
+    .propaganda img{
+        width: 100%;
+        height: 80%;
+    }
+    .seletores{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .vendas div > .produto{
+        display: flex;
+        justify-content: center;
+    }
+    .modal_style{
+        top: 5rem;
+        left: 1rem;
+        width: 22rem;
+        height: 25rem;
+    }
+    #imagem_padrão{
+        height: 20rem;
+    }
+    #quantidade{
+        font-size: 1.5rem;
+    }
+    #menos, #mais{
+        height: 3rem;
+        width: 3rem;
+        margin-right: 0;    
+    }
+    #comprar{
+        margin-top: 1rem;
+        width: 7rem;
+    }
+    #links_container{
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+    .links{
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        background-color: #e69720;
+    }
+    #links_container a:hover{
+        text-decoration: none;
+    }
+    #links_container li:hover{
+        background-color: #855712;
+    }
 }

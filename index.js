@@ -71,8 +71,13 @@ fechar.onclick = function(){
     modal.style.display = "none";
 }
 comprar.onclick = function(){
+    if(quantidade_val == 0){
+        alert("deve ser informado um valor de quantidade");
+    }else{
     quantidade.innerHTML = "quantidade: 0";
-    alert("compra realizada.");
+    alert("compra realizada");
+    modal.style.display = "none";
+}
 }
 function mudar_valor(val){
     if(quantidade_val == 0 && val == -1){
@@ -91,4 +96,15 @@ function mudar_imagem(índice){
             imagem_padrão.src = imagens[índice].src;
         }
     }
+}
+//Interações do menu hambúguer
+const menu = document.getElementById("menu");
+const links_container = document.getElementById("links_container");
+menu.onclick = function(){
+    if(links_container.style.display == "none"){
+        links_container.style.display = "block";
+    }
+    else{
+        links_container.style.display = "none";
+}
 }
